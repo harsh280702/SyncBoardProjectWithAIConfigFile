@@ -7,3 +7,19 @@ datasource:
     show-sql: true
     hibernate:
       ddl-auto: create-drop
+
+management:
+  endpoint:
+    health:
+      show-details: always
+    web:
+      exposure:
+        include: *
+  health:
+    config:
+       time-to-live: 5m
+    circuit-breakers:
+      enabled: true
+  tracing:
+    sampling:
+      probability: 2.6
