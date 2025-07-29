@@ -1,0 +1,9 @@
+datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: harsh
+    url: jdbc:mysql://localhost:3306/syncboard
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create-drop
